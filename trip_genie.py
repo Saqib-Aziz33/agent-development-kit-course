@@ -11,7 +11,6 @@ from typing import Any, List
 import pandas as pd
 import plotly.graph_objects as go
 import vertexai
-from google.colab import auth
 from IPython.display import HTML, Markdown, display
 
 # --- ADK, Agent, and Evaluation Components ---
