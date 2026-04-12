@@ -27,7 +27,8 @@ from google.genai.types import Content, Part
 from dotenv import load_dotenv
 load_dotenv()
 
-LLM_MODEL = "gemini-3.1-flash-lite-preview"
+# LLM_MODEL = "gemini-3.1-flash-lite-preview"
+LLM_MODEL = "gemini-2.5-flash"
 
 
 print("✅ All libraries are ready to go!")
@@ -124,3 +125,6 @@ async def run_day_trip_genie():
 
 async def main():
     await run_day_trip_genie()
+
+
+asyncio.run(main())
