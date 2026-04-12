@@ -27,6 +27,8 @@ from google.genai.types import Content, Part
 from dotenv import load_dotenv
 load_dotenv()
 
+LLM_MODEL = "gemini-3.1-flash-lite-preview"
+
 
 print("✅ All libraries are ready to go!")
 
@@ -37,7 +39,7 @@ def create_day_trip_agent():
     """Create the Spontaneous Day Trip Generator agent"""
     return Agent(
         name="day_trip_agent",
-        model="gemini-2.5-flash",
+        model=LLM_MODEL,
         description="Agent specialized in generating spontaneous full-day itineraries based on mood, interests, and budget.",
         instruction="""
         You are the "Spontaneous Day Trip" Generator 🚗 - a specialized AI assistant that creates engaging full-day itineraries.
